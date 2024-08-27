@@ -60,7 +60,7 @@ const Todo = () => {
   }, [todoList])
 
   return (
-    <div className="bg-gray-200 bg-opacity-80 text-black border-2 border-zinc-800 rounded-lg place-self-center w-full max-w-md md:max-w-lg flex flex-col p-5 md:p-7 min-h-[550px] shadow-lg">
+    <div className="bg-gray-200 bg-opacity-80 text-black border-2 border-zinc-800 rounded-lg place-self-center w-full max-w-md md:max-w-lg flex flex-col p-5 md:p-7 min-h-[550px] shadow-lg ">
       {/* title */}
       <div className="flex justify-center mt-4 md:mt-5 mb-6 md:mb-8 gap-3 md:gap-4">
         <img className="w-6 md:w-7" src={todo_icon} alt="todo_icon" />
@@ -70,10 +70,10 @@ const Todo = () => {
       </div>
 
       {/* input box */}
-      <div className="flex flex-col md:flex-row items-center gap-4 my-4 md:my-7">
+      <div className="flex flex-col md:flex-row justify-center gap-4 mt-3 md:mt-5 ">
         <input
           ref={inputRef}
-          className="bg-transparent border-2 border-black rounded-md outline-none flex-1 h-12 md:h-14 pl-4 md:pl-5 pr-2 placeholder:text-slate-700"
+          className=" bg-transparent border-2 border-black rounded-md outline-none flex-1 px-3 md:px-4 placeholder:text-slate-700  box-border w-full  md:w-32 h-34 md:h-14 text-white-900 cursor-pointer font-medium  mt-1 md:mt-0 py-3 "
           type="text"
           placeholder="What You Want To Do Today?"
           onKeyDown={handleKeyDown}
@@ -83,7 +83,7 @@ const Todo = () => {
           className="w-full md:w-32 h-12 md:h-14 text-white-900 cursor-pointer font-medium rounded-md mt-3 md:mt-0"
           style={{
             background:
-              'linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)',
+              'linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)',
             backgroundSize: '200% auto',
             transition: 'background-position 0.5s, color 0.5s',
             boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)',
@@ -122,7 +122,7 @@ const Todo = () => {
           className="w-full md:w-40 h-12 md:h-14 text-white-900 cursor-pointer font-medium rounded-md"
           style={{
             background:
-              'linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)',
+              'linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)',
             backgroundSize: '200% auto',
             transition: 'background-position 0.5s, color 0.5s',
             boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)',
@@ -143,7 +143,7 @@ const Todo = () => {
           className="w-full md:w-40 h-12 md:h-14 text-white-900 cursor-pointer font-medium rounded-md"
           style={{
             background:
-              'linear-gradient(to right, #16222A 0%, #3A6073  51%, #16222A  100%)',
+              'linear-gradient(to right, #16222A 0%, #3A6073 51%, #16222A 100%)',
             backgroundSize: '200% auto',
             transition: 'background-position 0.5s, color 0.5s',
             boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)',
